@@ -11,4 +11,7 @@ func RegisterUserApi() {
 	user := v1.Group("/user")
 	user.GET("", service.GetUser)
 
+	user2 := v1.Group("/user2")
+	user2.GET("", service.GetUser2)
+
 }
